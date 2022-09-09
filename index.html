@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8" />
-    </head>
-    <body>
-       <button id="generate-btn"">Generate passwords</button>
-       <input type="checkbox" id="symbols-chk" checked><label for="symbols-chk"> Include symbols?</label>
-       <input type="checkbox" id="num-chk" checked><label for="num-chk"> Include numbers?</label>
-       <p id="password-one"></p>
-       <p id="password-two"></p>
-       <p id="test"></p>
-    </body>
-    <script src="index.js"></script>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <h2>Generate a random password</h2>
+            <h3>You should always use a secure password</h3>
+            <div class="btnchk">
+                <button id="generate-btn">Generate passwords</button>
+                <div style="display: flex; flex-direction: column;">
+                    <div><input type="checkbox" id="symbols-chk" checked><label for="symbols-chk"> allow
+                            symbols?</label></div>
+                    <div><input type="checkbox" id="num-chk" checked><label for="num-chk"> allow numbers?</label></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="passwords">
+                <span id="password-one"></span>
+                <span id="password-two"></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
 </html>
